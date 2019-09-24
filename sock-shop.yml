@@ -3,23 +3,23 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: guestbook
+  name: sock-shop
 
 ---
 
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook-app
-  namespace: guestbook
+  name: sock-shop-app
+  namespace: sock-shop
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: guestbook
+    namespace: sock-shop
     server: 'https://kubernetes.default.svc'
   source:
-    path: 'slack-guestbook'
+    path: 'slack-sock-shop'
     repoURL: 'https://github.com/MrFreezeex/argocd-example-apps.git'
     targetRevision: HEAD
   project: default

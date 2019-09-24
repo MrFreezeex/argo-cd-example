@@ -1,0 +1,16 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: slack-webhook
+  namespace: argo-notif
+spec:
+  encryptedData:
+    SLACK_WEBHOOK: AgAZz09LsUQzTqzS/32eYjomX9F6RE49Yf+esjsAgVf+COmmZxGZRC9wdcdTdTSTOlVD1FQxyrAQGEpFLcJbG9WgpxDoomz6Qyop7Dmbgr9sjlHTvJML9ovm8Ox7XTejXjOQh5vCB4IJhM3Y8qwiaaclbBfyaOA4x6+46q4FPVFlVlfzrKSsxppEiOQkD0CL6VFVGV5Kkm290ZxJzHzuo5V+O4Me3OxHTaAujHYb9kCpMgYaWs0yc2ZGmZl43os5nlsuRhv2ReKp0NYJnTJdU1uW+YVo733GoQvvlsBGZrZMV+2kD3g4mA5pBNv9BqiPXtSSJuUjdKWMBiJbJRnKWDDekkPhgVdgH8Tc3VNPmnQQiZTVOuWasqTAUyaenRPqa/R5tL8yZuos7enp8SCMd8wdjTZ6ZOO8q/f9qkYHsiGe7+vDngL7HBV+y6HHs8LK0Lkl7qqvKu8OaYr2gz2eFxD7L2ayleOnq5uBgvwOh96H/vOpoGehqlSqeSStaCZbUHAnBpBXmIxJzSB2moNXY44cvCj+BEl1dkF8iIfNT5rwoPUxm2gX1sqO3jA0qiR+YVVGjxRjXODfwy7oYjfF5Y6DfNY6xODjcUpUCumQ5y2H65pG7gYN7+Jq06TkOG9Qhz7fE3gSR6OSoHoeBNiYDaTckJOjEQTs/eOCu5tqDlMXBWNk5Uoy9I+bdZpnESD+wd+4dEadIbbHfKgSaVJUKRIYFGUHLBgce2grEGcNIDtuKkqwMqCWrl0hPHs0QRJqRWIjEbIHcAV5zS49NHKXp2YIGNLonJOMnJPyvNAGpQ==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: slack-webhook
+      namespace: argo-notif
+status: {}
+
